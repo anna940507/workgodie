@@ -368,7 +368,7 @@
 
     <!-- B. 主視覺 (Hero Section) -->
     <header id="hero"
-        class="pt-32 pb-20 md:py-24 bg-dark-hero text-white min-h-[85vh] flex items-center relative overflow-hidden snap-start">
+        class="pt-80 pb-40 md:py-40 bg-dark-hero text-white min-h-[85vh] flex items-center relative overflow-hidden snap-start">
         <!-- 裝飾背景圓形 -->
         <div
             class="absolute top-0 right-0 w-96 h-96 bg-primary rounded-full filter blur-[100px] opacity-20 translate-x-1/2 -translate-y-1/2">
@@ -390,8 +390,8 @@
                         <span class="text-white block">零工平台</span>
                     </h1>
                     <p class="text-2xl md:text-3xl font-medium text-gray-300 mb-12 leading-relaxed max-w-lg">
-                        <span class="block">彈性、自由、即時結算。</span>
-                        <span class="text-white block">找到你的下一份短期任務。</span>
+                        <span class="block">彈性、自由、即時結算</span>
+                        <span class="text-white block">找到你的下一份短期任務</span>
                     </p>
 
                     <!-- CTA 按鈕群組 -->
@@ -410,8 +410,7 @@
                 <!-- Mockup 互動區 -->
                 <div class="w-full md:w-5/12 flex justify-center relative">
                     <div class="mockup-wrapper" onclick="openAppVisionModal()">
-                        <img src="img/logo.jpg" alt="Work Go Die App"
-                            class="mockup-image">
+                        <img src="img/logo.jpg" alt="Work Go Die App" class="mockup-image">
 
                         <!-- 點擊提示圖標 -->
                         <div class="click-hint">
@@ -429,21 +428,22 @@
     </header>
 
     <!-- E. 多元工作實景 (Gallery) -->
-    <section id="gallery" class="py-24 bg-white snap-start">
+    <section id="gallery" class="py-24 bg-primary snap-start">
         <div class="section-container text-center">
             <h2 class="text-5xl md:text-6xl font-black text-dark-hero mb-8">
                 尋找短期人力 / 體驗多元可能性
             </h2>
             <p class="text-2xl text-gray-500 mb-20 font-medium max-w-3xl mx-auto leading-relaxed">
-                無論是舉辦活動還是尋找打工，這裡都有最豐富的場景。<br>
+                不論你是需要支援，還是想多體驗不同工作，<br>
+                都能在這裡找到最合適的短期人力與機會。<br>
             </p>
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
                 <!-- Card 1: 音樂節支援 -->
                 <div class="hover-card group relative rounded-[2rem] overflow-hidden cursor-pointer aspect-[3/4]"
                     onclick="openJobDetailModal('music')">
-                    <img src="img/音樂祭.jpg"
-                        alt="音樂節" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <img src="img/音樂祭.jpg" alt="音樂節"
+                        class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8 text-left group-hover:opacity-0 transition-opacity">
                         <span class="text-accent text-sm font-bold mb-3 uppercase tracking-widest">Outdoor</span>
@@ -477,7 +477,7 @@
                         <p class="text-lg leading-relaxed text-gray-200 mb-6">
                             協助校慶攤位、社團博覽會或校內講座的物資搬運與場控。地點就在學校，利用空堂時間輕鬆打工！</p>
                         <div class="mt-auto">
-                            <span class="bg-primary text-white text-sm font-bold px-3 py-1 rounded-full">超方便</span>
+                            <span class="bg-primary text-dark-hero text-sm font-bold px-3 py-1 rounded-full">超方便</span>
                             <span class="bg-white/20 text-white text-sm font-bold px-3 py-1 rounded-full ml-1">校內</span>
                         </div>
                     </div>
@@ -507,8 +507,8 @@
                 <!-- Card 4: 婚禮助手 -->
                 <div class="hover-card group relative rounded-[2rem] overflow-hidden cursor-pointer aspect-[3/4]"
                     onclick="openJobDetailModal('wedding')">
-                    <img src="img/婚宴館.jpg"
-                        alt="婚禮助手" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    <img src="img/婚宴館.jpg" alt="婚禮助手"
+                        class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                     <div
                         class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8 text-left group-hover:opacity-0 transition-opacity">
                         <span class="text-bg-sep text-sm font-bold mb-3 uppercase tracking-widest">Event</span>
@@ -535,18 +535,17 @@
             <!-- 標題更新 -->
             <h2 class="text-4xl md:text-5xl font-black text-dark-hero mb-8 leading-tight">
                 做得快，拿得快；找得快，用得快<br>
-                您的願望一次滿足
+                <span class="block mb-4"></span>您的願望一次滿足
             </h2>
 
             <!-- 影片播放器 (點擊觸發全螢幕) -->
-            <div class="max-w-5xl mx-auto rounded-3xl shadow-2xl overflow-hidden aspect-video bg-black cursor-pointer group relative"
+            <div class="max-w-2xl mx-auto rounded-3xl shadow-2xl overflow-hidden aspect-video bg-black cursor-pointer group relative"
                 onclick="openVideoModal()">
                 <!-- 預覽圖/影片 -->
                 <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500"
                     muted loop playsinline>
                     <!-- 這裡放一個預覽用的短片或圖片 -->
-                    <source src="img/宣傳影片.mp4"
-                        type="video/mp4">
+                    <source src="img/宣傳影片.mp4" type="video/mp4">
                 </video>
 
                 <!-- 播放按鈕圖示 -->
@@ -565,7 +564,7 @@
             </div>
 
             <!-- 底部標語 -->
-            <h3 class="text-5xl font-black text-dark-hero mt-16 tracking-wide">
+            <h3 class="text-5xl font-black text-dark-hero mt-12 tracking-wide">
                 就找 WORK GO DIE
             </h3>
         </div>
@@ -748,13 +747,13 @@
     </section>
 
     <!-- C. 運作流程 (How It Works) - 修正：字色與 Mockup -->
-    <section id="how-it-works" class="py-24 bg-primary text-white snap-start">
+    <section id="dual-advantage" class="py-24 bg-primary snap-start">
         <div class="section-container">
-            <h2 class="text-5xl md:text-6xl font-black text-center mb-24 text-white drop-shadow-md">
+            <h2 class="text-5xl md:text-6xl font-black text-center mb-16 text-dark-hero">
                 三步驟，立即開始你的任務
             </h2>
 
-            <div class="flex flex-col md:flex-row justify-between items-start gap-12 relative">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-20 relative">
                 <!-- 連接線 (Desktop only) -->
                 <div class="hidden md:block absolute top-10 left-0 w-full h-1 bg-white/30 -z-10 rounded-full"></div>
 
@@ -765,10 +764,10 @@
                         1</div>
                     <!-- App Mockup Image (插入修正：2:3, 穩定) -->
                     <div class="step-mockup-container" style="transform: rotate(-3deg);">
-                        <img src="https://placehold.co/400x600/B2E7C6/2c3e50?text=Post+Job" alt="發布任務 App 頁面">
+                        <img src="img/step1_post_job.jpg" alt="發布任務 App 頁面">
                     </div>
-                    <h3 class="text-3xl font-bold mb-4 text-dark-hero">App 點擊發布任務</h3> <!-- 修正：深色字 -->
-                    <p class="text-dark-hero text-xl font-medium">簡單填寫資訊，<br>輕鬆發布或篩選。</p>
+                    <h3 class="text-3xl font-bold mb-4 text-dark-hero">發布任務</h3> <!-- 修正：深色字 -->
+                    <p class="text-dark-hero text-xl font-medium">簡單填寫資訊<br>輕鬆發布或篩選</p>
                 </div>
 
                 <!-- Step 2 (Mockup 修正：寬度 100% + 右傾) -->
@@ -777,10 +776,10 @@
                         class="bg-action text-dark-hero w-20 h-20 rounded-full flex items-center justify-center text-4xl font-black shadow-lg mb-10 transform group-hover:scale-110 transition">
                         2</div>
                     <div class="step-mockup-container" style="transform: rotate(3deg);">
-                        <img src="https://placehold.co/400x600/FFC0CB/2c3e50?text=Matching" alt="媒合">
+                        <img src="img/step2_matching (1).jpg" alt="媒合">
                     </div>
-                    <h3 class="text-3xl font-bold mb-4 text-dark-hero">智慧媒合與確認</h3>
-                    <p class="text-dark-hero text-xl font-medium">AI 快速匹配，<br>一鍵確認人選。</p>
+                    <h3 class="text-3xl font-bold mb-4 text-dark-hero">智慧媒合</h3>
+                    <p class="text-dark-hero text-xl font-medium">AI 快速匹配<br>一鍵確認人選</p>
                 </div>
 
                 <!-- Step 3 (Mockup 修正：寬度 100% + 左傾) -->
@@ -789,10 +788,10 @@
                         class="bg-bg-sep text-dark-hero w-20 h-20 rounded-full flex items-center justify-center text-4xl font-black shadow-lg mb-10 transform group-hover:scale-110 transition">
                         3</div>
                     <div class="step-mockup-container" style="transform: rotate(-3deg);">
-                        <img src="https://placehold.co/400x600/FCE5C9/2c3e50?text=Payment" alt="結算">
+                        <img src="img/step3_payment.jpg" alt="結算">
                     </div>
                     <h3 class="text-3xl font-bold mb-4 text-dark-hero">線上即時結算</h3>
-                    <p class="text-dark-hero text-xl font-medium">任務完成自動撥款，<br>雙方無後顧之憂。</p>
+                    <p class="text-dark-hero text-xl font-medium">任務完成自動撥款<br>雙方無後顧之憂</p>
                 </div>
             </div>
         </div>
@@ -996,7 +995,7 @@
                 <div class="bg-dark-hero p-12 rounded-[2.5rem] max-w-xl w-11/12 shadow-2xl relative modal-enter text-center border-4 border-primary" onclick="event.stopPropagation()">
                      <h3 class="text-4xl font-black text-white mb-8">Work Go Die 願景</h3>
                      <p class="text-2xl text-gray-200 leading-relaxed font-medium">
-                        「每個空閒時刻都值得轉化為價值。」<br><br>
+                        「每個空閒時刻都值得轉化為價值。」<br>
                         自由、安全、即時回饋，<br>是我們對彈性職涯的承諾。
                      </p>
                      <button onclick="closeAllModals()" class="mt-10 text-white/50 hover:text-white transition font-bold text-lg">關閉</button>
