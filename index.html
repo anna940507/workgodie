@@ -544,23 +544,16 @@
                 <span class="block mb-4"></span>您的願望一次滿足
             </h2>
 
-            <!-- 影片播放器 (點擊觸發全螢幕) -->
-            <div class="max-w-2xl mx-auto rounded-3xl shadow-2xl overflow-hidden aspect-video bg-black cursor-pointer group relative"
-                onclick="openVideoModal()">
-                <!-- 預覽圖/影片 -->
-                <video class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500"
-                    muted loop playsinline>
-                    <!-- 這裡放一個預覽用的短片或圖片 -->
-                    <source src="img/宣傳影片.mp4" type="video/mp4">
-                </video>
-
+ <!-- 影片播放器 (點擊觸發全螢幕) -->
+            <div class="max-w-5xl mx-auto rounded-3xl shadow-2xl overflow-hidden aspect-video bg-black cursor-pointer group relative" onclick="openVideoModal()">
+                <!-- 預覽圖/影片 (修正：改為 img 標籤顯示大合照) -->
+                <img src="img/大合照.jpg" alt="Work Go Die 團隊合照" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition duration-500" 
+                     onerror="this.src='https://placehold.co/1280x720/333/fff?text=Video+Preview+Image'"> <!-- Fallback if local image not found -->
+                
                 <!-- 播放按鈕圖示 -->
                 <div class="absolute inset-0 flex items-center justify-center">
-                    <div
-                        class="w-24 h-24 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center group-hover:scale-110 transition duration-300">
-                        <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M8 5v14l11-7z" />
-                        </svg>
+                    <div class="w-18 h-18 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center group-hover:scale-110 transition duration-300">
+                        <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                     </div>
                 </div>
 
